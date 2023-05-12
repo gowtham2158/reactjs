@@ -1,0 +1,31 @@
+#contact{
+    width: 250px;
+    height: 35px;
+    margin-left: 400px;
+    margin-top: 50px;
+    color: chartreuse;
+}
+#h1{
+    margin-top: 20px;
+    color: rgb(127, 197, 197);
+    text-shadow:  2px 4px 6px rgb(60, 143, 135);
+    font-size: 50px;
+    
+}
+#Viewbtn{
+    width: 200px;
+    height: 35px;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: chartreuse;
+
+}
+#icon2{
+    font-size: 60px;
+    color: rgb(77, 141, 141);
+    margin-left: 600px;
+}
+@media screen and (max-width:1200px) {
+    
+    .container{width: 100%;}
+}

@@ -1,0 +1,41 @@
+#F1{
+width: 250px;
+height: 30px;
+background-color: aquamarine;
+margin-top: 10px;
+border-radius: 10px;
+}
+
+#L1{
+    width: 250px;
+    height: 30px;
+    background-color: aquamarine;
+    margin-top: 10px;
+    border-radius: 10px;
+    }
+#P1{
+    width: 250px;
+    height: 30px;
+    background-color: aquamarine;
+    margin-top: 10px;
+    border-radius: 10px;
+    }
+#S1{
+    width: 80px;
+    height: 30px;
+    margin-left: 70px;
+    margin-top: 10px;
+    background-color: rgb(107, 162, 176);
+    border-radius: 10px;
+    color: white;
+    }
+#form1{margin-top: 50px;
+    margin-left: 500px;
+
+}
+#A1{
+    color: rgb(135, 157, 114);
+    font-size: 40px;
+    font-style: normal;
+    text-shadow: 2px 4px 6px rgb(125, 161, 71);
+}

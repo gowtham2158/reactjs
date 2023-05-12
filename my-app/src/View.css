@@ -1,0 +1,60 @@
+#table1{
+    width: 350px;
+    color: cornsilk;
+    background-color: grey;
+    margin-top: 30px;
+    margin-left: 500px;
+    border-collapse: collapse;
+}
+#td1{
+    width: 30px;
+    height: 20px;
+}
+/* #td1:hover{
+    width: 50px;
+    height: 40px;
+    background-color: rgb(138, 207, 224);
+    box-shadow: 2px 4px 6px rgb(144, 172, 102);
+} */
+#td2{
+    width: 150px;
+    height: 20px;
+    word-spacing: 5px;
+}
+/* #td2:hover{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(144, 216, 216);
+    box-shadow: 2px 4px 6px rgb(144, 172, 102);
+} */
+#td3{
+    text-align: center;
+    height: 50px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(223, 233, 234);
+    text-shadow: 2px 4px 6px rgb(228, 228, 171);
+}
+#td4{
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+#icon1{
+    color: rgb(12, 12, 12);
+}
+.tr1:hover{
+    /* transform: scale(1.1); */
+    background-color: rgb(107, 169, 169);
+    box-shadow: 2px 4px 8px rgb(192, 231, 132);
+    font-size: 30px;
+    
+}
+#garuda{
+    color: rgb(12, 97, 97);
+}
+#garuda1{
+    color: rgb(25, 196, 25);
+}

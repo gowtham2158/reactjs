@@ -1,0 +1,51 @@
+.container{
+    margin-top: 10px;
+    margin-left: 1px;
+    
+  }
+  table{
+    background-color: black;
+  border-radius: 10px;
+  
+  }
+  #clr{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(179, 243, 43);
+  }
+  #clr:hover{
+    background-color: rgb(226, 18, 18);
+  }
+  #c:hover{
+    background-color: aqua;
+  }
+  #c{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+     box-shadow: 2px 4px 6px;
+     background-color: rgb(179, 243, 43);
+  }
+  button{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px greenyellow;
+    background-color: rgb(152, 175, 117);
+  
+  }
+  #display{
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px greenyellow ;
+    font-size: 15px;
+    background-color: rgb(165, 174, 135);
+  }
+  button:hover{
+    background-color: rgb(179, 243, 43);
+  }

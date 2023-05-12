@@ -1,0 +1,70 @@
+(function(networkId) {
+var cacheLifetimeDays = 30;
+
+var customDataWaitForConfig = [
+  { on: function() { return Invoca.Client.parseCustomDataField("advertiser", "Last", "URLParam", ""); }, paramName: "advertiser", fallbackValue: null },
+  { on: function() { return Invoca.Client.parseCustomDataField("calling_page", "Last", "URLParam", ""); }, paramName: "calling_page", fallbackValue: null },
+  { on: function() { return Invoca.Client.parseCustomDataField("customer_id", "Last", "URLParam", ""); }, paramName: "customer_id", fallbackValue: null },
+  { on: function() { return Invoca.Client.parseCustomDataField("destination", "Last", "URLParam", ""); }, paramName: "destination", fallbackValue: null },
+  { on: function() { return Invoca.Client.parseCustomDataField("fbclid", "Last", "URLParam", ""); }, paramName: "fbclid", fallbackValue: null },
+  { on: function() { return Invoca.Client.parseCustomDataField("gclid", "Last", "URLParam", ""); }, paramName: "gclid", fallbackValue: null },
+  { on: function() { return Invoca.Client.parseCustomDataField("keyword", "Last", "URLParam", ""); }, paramName: "keyword", fallbackValue: null },
+  { on: function() { return Invoca.Client.parseCustomDataField("landing_page", "Last", "URLParam", ""); }, paramName: "landing_page", fallbackValue: null },
+  { on: function() { return Invoca.Client.parseCustomDataField("utm_campaign", "Last", "URLParam", ""); }, paramName: "utm_campaign", fallbackValue: null },
+  { on: function() { return Invoca.Client.parseCustomDataField("utm_medium", "Last", "URLParam", ""); }, paramName: "utm_medium", fallbackValue: function() { return Invoca.PNAPI.currentPageSettings.poolParams.utm_medium || null; } },
+  { on: function() { return Invoca.Client.parseCustomDataField("utm_source", "Last", "URLParam", ""); }, paramName: "utm_source", fallbackValue: function() { return Invoca.PNAPI.currentPageSettings.poolParams.utm_source || null; } },
+  { on: function() { return Invoca.Client.parseCustomDataField("vertical", "Last", "URLParam", ""); }, paramName: "vertical", fallbackValue: null }
+];
+
+var defaultCampaignId = "5858845";
+
+var destinationSettings = {
+  paramName: "invoca_detected_destination",
+  matchLocalNumbers: false,
+  matchTollFreeNumbers: false
+};
+
+var numbersToReplace = {
+  "+12058234440": "6045020"
+};
+
+var organicSources = true;
+
+var reRunAfter = null;
+
+var requiredParams = null;
+
+var resetCacheOn = ['gclid', 'utm_source', 'utm_medium'];
+
+var waitFor = 0;
+
+var customCodeIsSet = (function() {
+  Invoca.Client.customCode = function(options) {
+    return options;
+  };
+
+  return true;
+})();
+
+var generatedOptions = {
+  autoSwap:            false,
+  cookieDays:          cacheLifetimeDays,
+  country:             "US",
+  defaultCampaignId:   defaultCampaignId,
+  destinationSettings: destinationSettings,
+  disableUrlParams:    [],
+  doNotSwap:           [],
+  maxWaitFor:          waitFor,
+  networkId:           networkId || null,
+  numberToReplace:     numbersToReplace,
+  organicSources:      organicSources,
+  poolParams:          {},
+  reRunAfter:          reRunAfter,
+  requiredParams:      requiredParams,
+  resetCacheOn:        resetCacheOn,
+  waitForData:         customDataWaitForConfig
+};
+
+Invoca.Client.startFromWizard(generatedOptions);
+
+})(2234);
